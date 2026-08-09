@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://dbu0qgd1fy7ok"]
+
+[node name="AlternativeLauncher" type="Control" unique_id=1032553421]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Account" type="HBoxContainer" parent="." unique_id=484293023]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.05
+anchor_right = 0.28
+anchor_bottom = 0.05
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="AvatarPlaceholder" type="PanelContainer" parent="Account" unique_id=522438253]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Details" type="VBoxContainer" parent="Account" unique_id=683284403]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Username" type="Label" parent="Account/Details" unique_id=1993178241]
+layout_mode = 2
+text = "Not logged in"
+
+[node name="AccountType" type="Label" parent="Account/Details" unique_id=369808508]
+layout_mode = 2
+text = "Microsoft Account"
+
+[node name="Navigation" type="HBoxContainer" parent="." unique_id=373265819]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_top = 0.06
+anchor_right = 0.78
+anchor_bottom = 0.06
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Start" type="Button" parent="Navigation" unique_id=1046400642]
+custom_minimum_size = Vector2(220, 72)
+layout_mode = 2
+text = "Start"
+
+[node name="Mods" type="Button" parent="Navigation" unique_id=1432682708]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="Resourcepacks" type="Button" parent="Navigation" unique_id=1674960318]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="Shader" type="Button" parent="Navigation" unique_id=409477852]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="SkinsCapes" type="Button" parent="Navigation" unique_id=1019178026]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="WorldsScreenshots" type="Button" parent="Navigation" unique_id=2067977510]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="Test" type="Button" parent="Navigation" unique_id=261305097]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="Settings" type="Button" parent="Navigation" unique_id=1168386008]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="TopRightSettings" type="Button" parent="." unique_id=765268290]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.94
+anchor_top = 0.05
+anchor_right = 0.94
+anchor_bottom = 0.05
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Setting"
+
+[node name="MainContent" type="Control" parent="." unique_id=1680609100]
+layout_mode = 1
+anchor_top = 0.18
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ModpackIconPlaceholder" type="PanelContainer" parent="MainContent" unique_id=735564987]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.55
+anchor_right = 0.5
+anchor_bottom = 0.55
+offset_left = -52.0
+offset_top = -52.0
+offset_right = 52.0
+offset_bottom = 52.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="BottomBar" type="HBoxContainer" parent="MainContent" unique_id=1539465349]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.82
+anchor_right = 0.5
+anchor_bottom = 0.82
+offset_left = -448.0
+offset_top = -36.400024
+offset_right = 520.0
+offset_bottom = 35.599976
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 1
+
+[node name="Menu" type="OptionButton" parent="MainContent/BottomBar" unique_id=2136742421]
+custom_minimum_size = Vector2(150, 64)
+layout_mode = 2
+size_flags_vertical = 4
+item_count = 2
+popup/item_0/text = "Latest Release"
+popup/item_0/id = 0
+popup/item_1/text = "Add new Instance"
+popup/item_1/id = 1
+
+[node name="Play" type="Button" parent="MainContent/BottomBar" unique_id=1666474505]
+custom_minimum_size = Vector2(300, 72)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 34
+text = "PLAY"
+
+[node name="QuickPlay" type="Control" parent="MainContent/BottomBar" unique_id=342972343]
+custom_minimum_size = Vector2(260, 64)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="IconPlaceholder" type="PanelContainer" parent="MainContent/BottomBar/QuickPlay" unique_id=658299115]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 56.0
+size_flags_vertical = 4
+
+[node name="QuickPlayButton" type="Label" parent="MainContent/BottomBar/QuickPlay" unique_id=1430602270]
+custom_minimum_size = Vector2(148, 64)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 18.599976
+offset_right = 198.0
+offset_bottom = 82.599976
+text = "QUICK PLAY"
+
+[node name="Shortcut" type="Label" parent="MainContent/BottomBar/QuickPlay" unique_id=703338459]
+custom_minimum_size = Vector2(32, 64)
+layout_mode = 0
+offset_left = 8.0
+offset_top = -2.4000244
+offset_right = 40.0
+offset_bottom = 61.599976
+text = "R"
+horizontal_alignment = 1
+vertical_alignment = 1

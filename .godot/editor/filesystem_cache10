@@ -1,7 +1,8 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786295240
+::res://::1786301095
+alternative.tscn::PackedScene::7272285268283668598::1786301091::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4495857109492016873::1786278212::1786278307::1::::<><><>0<>0<>f43d864ec0e32b58d1021541ed79376f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::7549894931442659179::1786295436::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
+main.tscn::PackedScene::7549894931442659179::1786295505::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
 README.md::TextFile::-1::1786291910::0::1::::<><><>0<>0<><>::
 ::res://fonts/::1786292786
 ::res://fonts/Minecraft Font/::1786293104
