@@ -2,6 +2,10 @@
 
 [ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_ig7tw"]
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_footer_separator"]
+color = Color(1, 1, 1, 0.19607843)
+thickness = 2
+
 [node name="SentinelLauncher" type="Control" unique_id=1310285605]
 layout_mode = 3
 anchors_preset = 15
@@ -40,9 +44,9 @@ theme_override_fonts/font = ExtResource("1_ig7tw")
 theme_override_font_sizes/font_size = 26
 tab_alignment = 2
 current_tab = 0
-tab_4/title = "You"
-tab_5/title = "Worlds"
-tab_6/title = "Screenshots"
+tab_4/title = "Worlds"
+tab_5/title = "Screenshots"
+tab_6/title = "You"
 tab_7/title = "Settings"
 
 [node name="Instances" type="Control" parent="Pages" unique_id=1070538521]
@@ -172,6 +176,7 @@ offset_right = -48.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxLine_footer_separator")
 
 [node name="Play" type="Button" parent="Pages/Instances" unique_id=1491213259]
 layout_mode = 1
@@ -246,19 +251,19 @@ metadata/_tab_index = 3
 visible = false
 layout_mode = 2
 metadata/_tab_index = 4
-metadata/_tab_name = "You"
+metadata/_tab_name = "Worlds"
 
 [node name="Worlds & Screenshots" type="Control" parent="Pages" unique_id=857543663]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 5
-metadata/_tab_name = "Worlds"
+metadata/_tab_name = "Screenshots"
 
 [node name="Test" type="Control" parent="Pages" unique_id=231704861]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 6
-metadata/_tab_name = "Screenshots"
+metadata/_tab_name = "You"
 
 [node name="Settings & Config" type="Control" parent="Pages" unique_id=1831234399]
 visible = false
