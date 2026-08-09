@@ -6,8 +6,8 @@ A Minecraft Launcher trying to be not annoying
 ## Core Launcher
 
 * [ ] Create basic launcher architecture
-* [ ] Create main launcher window
-* [ ] Implement navigation between launcher pages
+* [x] Create main launcher window
+* [x] Implement navigation between launcher pages
 * [ ] Create persistent launcher settings
 * [ ] Implement Minecraft installation directory management
 * [ ] Detect existing Minecraft installations
