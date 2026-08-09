@@ -1,12 +1,9 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786292359
+::res://::1786293171
 icon.svg::CompressedTexture2D::4495857109492016873::1786278212::1786278307::1::::<><><>0<>0<>f43d864ec0e32b58d1021541ed79376f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::7549894931442659179::1786292321::0::1::::<><><>0<>0<><>::res://fonts/Public_Pixel_Font_1_24/PublicPixel.ttf
+main.tscn::PackedScene::7549894931442659179::1786293310::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
 README.md::TextFile::-1::1786291910::0::1::::<><><>0<>0<><>::
-::res://fonts/::1786292236
-::res://fonts/Public_Pixel_Font_1_24/::1786292236
-License.txt::TextFile::-1::1786292236::0::1::::<><><>0<>0<><>::
-PublicPixel.otf::FontFile::6965078536034020569::1786292236::1786292236::1::::<><><>0<>0<>5cb6f6caea883a7fb49f8a6f045fd41e<>res://.godot/imported/PublicPixel.otf-32419a405aa753d63354a22b8c2aec37.fontdata::
-PublicPixel.ttf::FontFile::2911381971281166286::1786292236::1786292236::1::::<><><>0<>0<>3d973e4ef0a8b29e453e6c47b807334c<>res://.godot/imported/PublicPixel.ttf-35e8d3802984aa6d6f49e83e3f1449a0.fontdata::
-PublicPixel.woff::FontFile::3094399061693695864::1786292236::1786292236::1::::<><><>0<>0<>c13ebc278e0a01eb3b6a8d638f4ba148<>res://.godot/imported/PublicPixel.woff-6d6437c8f14c8d7729cc53e11fe84e86.fontdata::
-PublicPixel.woff2::FontFile::1789688671074096345::1786292236::1786292236::1::::<><><>0<>0<>ebcced0dafb066bb9a0976b3addb0ef0<>res://.godot/imported/PublicPixel.woff2-eab0c18c5aafa026da6fd260a95a86ba.fontdata::
+::res://fonts/::1786292786
+::res://fonts/Minecraft Font/::1786293104
+Minecraft-Bold.otf::FontFile::1584391711625340704::1786292797::1786292797::1::::<><><>0<>0<>b10513aa72615490d7f62669d4b45ef8<>res://.godot/imported/Minecraft-Bold.otf-8adc619b9b6aca11424e4bcf81fad45b.fontdata::
+Minecraft.otf::FontFile::6317389090420106136::1786292797::1786292797::1::::<><><>0<>0<>44e1c978ede58c6c6c192494972d0de8<>res://.godot/imported/Minecraft.otf-82afdcfcd0bbd7daf9d8b47e606e9dc1.fontdata::

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dfthwwo3ngrt8"]
 
-[ext_resource type="FontFile" path="res://fonts/Public_Pixel_Font_1_24/PublicPixel.ttf" id="1_public_pixel"]
+[ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_ig7tw"]
 
 [node name="SentinelLauncher" type="Control" unique_id=1310285605]
 layout_mode = 3
@@ -9,7 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_public_pixel")
 
 [node name="Title" type="Label" parent="." unique_id=346670936]
 layout_mode = 1
@@ -35,8 +34,10 @@ offset_right = 69.0
 offset_bottom = 198.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/side_margin = 0
 theme_override_constants/tab_separation = 0
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("1_ig7tw")
+theme_override_font_sizes/font_size = 26
 tab_alignment = 2
 current_tab = 0
 
@@ -215,10 +216,10 @@ anchor_left = 0.94
 anchor_top = 0.81
 anchor_right = 0.98
 anchor_bottom = 0.88
-offset_left = 1.0
-offset_top = 8.0
-offset_right = -45.0
-offset_bottom = -47.0
+offset_left = -4.76001
+offset_top = 6.450012
+offset_right = -51.920044
+offset_bottom = -45.400024
 grow_horizontal = 2
 grow_vertical = 0
 
