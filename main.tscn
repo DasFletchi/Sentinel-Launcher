@@ -1,0 +1,309 @@
+[gd_scene format=3 uid="uid://dfthwwo3ngrt8"]
+
+[node name="SentinelLauncher" type="Control" unique_id=1310285605]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="." unique_id=346670936]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.32
+offset_left = 26.0
+offset_top = 29.0
+offset_right = -20.950012
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 33
+text = "Sentinel Launcher"
+
+[node name="Pages" type="TabContainer" parent="." unique_id=2064845284]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.08
+anchor_right = 0.96
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 2
+current_tab = 0
+
+[node name="Mods" type="Control" parent="Pages" unique_id=1070538521]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Content" type="VBoxContainer" parent="Pages/Mods" unique_id=1866682337]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 28.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Modpacks" type="GridContainer" parent="Pages/Mods/Content" unique_id=121047195]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 6
+
+[node name="Modpack1" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=722321174]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack1" unique_id=476412755]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack1" unique_id=77022287]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack2" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1978166657]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack2" unique_id=606450496]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack2" unique_id=656742079]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack3" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=2063436340]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack3" unique_id=266208304]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack3" unique_id=1562576972]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack4" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=164460131]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack4" unique_id=787423166]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack4" unique_id=1328545818]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack5" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1341294840]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack5" unique_id=1234291195]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack5" unique_id=141571983]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="DownloadModpack" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=2043117442]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Plus" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/DownloadModpack" unique_id=640952651]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Pages/Mods/Content/Modpacks/DownloadModpack/Plus" unique_id=1725559324]
+layout_mode = 2
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/DownloadModpack" unique_id=738231482]
+layout_mode = 2
+text = "Download new
+Modpack"
+horizontal_alignment = 1
+
+[node name="Modpack6" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1476378019]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack6" unique_id=520286118]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack6" unique_id=503516048]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack7" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=365176092]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack7" unique_id=1025677423]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack7" unique_id=2018046631]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack8" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1038030603]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack8" unique_id=876328736]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack8" unique_id=1059656504]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack9" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1311448839]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack9" unique_id=991243206]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack9" unique_id=2117893728]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Modpack10" type="VBoxContainer" parent="Pages/Mods/Content/Modpacks" unique_id=1356035583]
+custom_minimum_size = Vector2(170, 190)
+layout_mode = 2
+
+[node name="Placeholder" type="PanelContainer" parent="Pages/Mods/Content/Modpacks/Modpack10" unique_id=340539350]
+custom_minimum_size = Vector2(150, 120)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Pages/Mods/Content/Modpacks/Modpack10" unique_id=526212827]
+layout_mode = 2
+text = "Modpack
+Placeholder"
+horizontal_alignment = 1
+
+[node name="Resourcepacks" type="Control" parent="Pages" unique_id=521218476]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Shader" type="Control" parent="Pages" unique_id=2031246969]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="Skins & Capes" type="Control" parent="Pages" unique_id=1543554621]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="Worlds & Screenshots" type="Control" parent="Pages" unique_id=857543663]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="Settings & Config" type="Control" parent="Pages" unique_id=1831234399]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="FooterSeparator" type="HSeparator" parent="." unique_id=1184897042]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 0.8
+offset_left = 48.0
+offset_top = -1.0
+offset_right = -48.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Play" type="Button" parent="." unique_id=1491213259]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32
+anchor_top = 0.81
+anchor_right = 0.68
+anchor_bottom = 0.89
+grow_horizontal = 2
+grow_vertical = 0
+text = "PLAY"
+
+[node name="DownloadStatus" type="Label" parent="." unique_id=261881545]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.89
+anchor_right = 0.7
+anchor_bottom = 0.96
+offset_top = 8.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Downloading Requirements for Modpack"
+horizontal_alignment = 1
+
+[node name="PlayingAs" type="Label" parent="." unique_id=2133747816]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_top = 0.81
+anchor_right = 0.94
+anchor_bottom = 0.88
+offset_left = 8.0
+offset_right = -8.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Playing as: \"not logged in\""
+horizontal_alignment = 2
+
+[node name="PlayerHeadPlaceholder" type="PanelContainer" parent="." unique_id=1016713709]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.94
+anchor_top = 0.81
+anchor_right = 0.98
+anchor_bottom = 0.88
+offset_left = 1.0
+offset_top = 8.0
+offset_right = -45.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 0
