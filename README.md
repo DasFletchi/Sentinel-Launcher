@@ -1,7 +1,5 @@
 # Sentinel-Launcher
-#- A Minecraft Launcher that is not annoying
-
----
+A Minecraft Launcher trying to be not annoying
 
 # TODO
 
