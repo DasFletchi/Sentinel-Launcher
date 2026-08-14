@@ -527,3 +527,4 @@ offset_left = 240.0
 [connection signal="pressed" from="RootLayout/Sidebar/SideContent/NavMargin/NavList/BtnWorlds" to="." method="_on_btn_worlds_pressed"]
 [connection signal="pressed" from="RootLayout/Sidebar/SideContent/NavMargin/NavList/BtnScreenshots" to="." method="_on_btn_screenshots_pressed"]
 [connection signal="pressed" from="RootLayout/Sidebar/SideContent/NavMargin/NavList/BtnYou" to="." method="_on_btn_you_pressed"]
+[connection signal="pressed" from="RootLayout/Sidebar/SideContent/SettingsSection/BtnSettings" to="." method="_on_btn_settings_pressed"]
