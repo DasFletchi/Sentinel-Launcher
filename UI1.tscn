@@ -329,7 +329,6 @@ text = "⚙  Settings"
 alignment = 0
 
 [node name="MainPanel" type="MarginContainer" parent="RootLayout" unique_id=1630157514]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 20
@@ -517,6 +516,7 @@ theme_override_styles/focus = SubResource("sb_play_normal")
 text = "PLAY"
 
 [node name="ModsPage" parent="." unique_id=1051520636 instance=ExtResource("3_1vn64")]
+visible = false
 layout_mode = 1
 offset_left = 240.0
 
