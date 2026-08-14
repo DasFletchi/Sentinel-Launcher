@@ -1,0 +1,274 @@
+[gd_scene format=3 uid="uid://dkn7h2w5q3m1p"]
+
+[ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_font"]
+[ext_resource type="FontFile" uid="uid://wtqx2hd2ya5u" path="res://fonts/Minecraft Font/Minecraft-Bold.otf" id="2_bold"]
+[ext_resource type="PackedScene" uid="uid://c6xk3m8y7j2p1" path="res://mod_item.tscn" id="3_item"]
+
+[sub_resource type="StyleBoxFlat" id="sb_page_bg"]
+bg_color = Color(0.086, 0.086, 0.086, 1)
+
+[sub_resource type="StyleBoxFlat" id="sb_search_bar"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.137, 0.137, 0.137, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="sb_filter_opt"]
+content_margin_left = 12.0
+content_margin_top = 8.0
+content_margin_right = 12.0
+content_margin_bottom = 8.0
+bg_color = Color(0.137, 0.137, 0.137, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.08)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="sb_btn_search_n"]
+content_margin_left = 18.0
+content_margin_top = 8.0
+content_margin_right = 18.0
+content_margin_bottom = 8.0
+bg_color = Color(0.216, 0.651, 0.231, 1)
+border_width_bottom = 3
+border_color = Color(0.125, 0.435, 0.137, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="sb_btn_search_h"]
+content_margin_left = 18.0
+content_margin_top = 8.0
+content_margin_right = 18.0
+content_margin_bottom = 8.0
+bg_color = Color(0.278, 0.749, 0.298, 1)
+border_width_bottom = 3
+border_color = Color(0.157, 0.518, 0.173, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxLine" id="sb_sep"]
+color = Color(1, 1, 1, 0.08)
+
+[sub_resource type="StyleBoxFlat" id="sb_load_more"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.14, 0.14, 0.14, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.08)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="ModsPage" type="Panel" unique_id=1051520636]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("sb_page_bg")
+
+[node name="PageMargin" type="MarginContainer" parent="." unique_id=1232305765]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 20
+
+[node name="PageVBox" type="VBoxContainer" parent="PageMargin" unique_id=981416523]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="HeaderHBox" type="HBoxContainer" parent="PageMargin/PageVBox" unique_id=112456323]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PageTitle" type="Label" parent="PageMargin/PageVBox/HeaderHBox" unique_id=1899352511]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bold")
+theme_override_font_sizes/font_size = 24
+text = "BROWSE MODS"
+
+[node name="HeaderSpacer" type="Control" parent="PageMargin/PageVBox/HeaderHBox" unique_id=1085742284]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ApiProviderTag" type="Label" parent="PageMargin/PageVBox/HeaderHBox" unique_id=729757370]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.188, 0.741, 0.388, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 14
+text = "● Powered by Modrinth"
+
+[node name="FilterBar" type="HBoxContainer" parent="PageMargin/PageVBox" unique_id=552950027]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="SearchInput" type="LineEdit" parent="PageMargin/PageVBox/FilterBar" unique_id=942308763]
+custom_minimum_size = Vector2(300, 42)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_placeholder_color = Color(0.45, 0.45, 0.45, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("sb_search_bar")
+theme_override_styles/focus = SubResource("sb_search_bar")
+placeholder_text = "Search mods (e.g. Sodium, Create, JEI)..."
+clear_button_enabled = true
+
+[node name="LoaderFilter" type="OptionButton" parent="PageMargin/PageVBox/FilterBar" unique_id=450883060]
+custom_minimum_size = Vector2(140, 42)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("sb_filter_opt")
+theme_override_styles/pressed = SubResource("sb_filter_opt")
+theme_override_styles/hover = SubResource("sb_filter_opt")
+theme_override_styles/focus = SubResource("sb_filter_opt")
+item_count = 5
+popup/item_0/text = "All Loaders"
+popup/item_0/id = 0
+popup/item_1/text = "Fabric"
+popup/item_1/id = 1
+popup/item_2/text = "Forge"
+popup/item_2/id = 2
+popup/item_3/text = "NeoForge"
+popup/item_3/id = 3
+popup/item_4/text = "Quilt"
+popup/item_4/id = 4
+
+[node name="VersionFilter" type="OptionButton" parent="PageMargin/PageVBox/FilterBar" unique_id=1061550817]
+custom_minimum_size = Vector2(130, 42)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("sb_filter_opt")
+theme_override_styles/pressed = SubResource("sb_filter_opt")
+theme_override_styles/hover = SubResource("sb_filter_opt")
+theme_override_styles/focus = SubResource("sb_filter_opt")
+item_count = 6
+popup/item_0/text = "All Versions"
+popup/item_0/id = 0
+popup/item_1/text = "1.21.5"
+popup/item_1/id = 1
+popup/item_2/text = "1.21.4"
+popup/item_2/id = 2
+popup/item_3/text = "1.21.1"
+popup/item_3/id = 3
+popup/item_4/text = "1.20.1"
+popup/item_4/id = 4
+popup/item_5/text = "1.19.2"
+popup/item_5/id = 5
+
+[node name="SortFilter" type="OptionButton" parent="PageMargin/PageVBox/FilterBar" unique_id=445809528]
+custom_minimum_size = Vector2(140, 42)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("sb_filter_opt")
+theme_override_styles/pressed = SubResource("sb_filter_opt")
+theme_override_styles/hover = SubResource("sb_filter_opt")
+theme_override_styles/focus = SubResource("sb_filter_opt")
+item_count = 4
+popup/item_0/text = "Relevance"
+popup/item_0/id = 0
+popup/item_1/text = "Downloads"
+popup/item_1/id = 1
+popup/item_2/text = "Follows"
+popup/item_2/id = 2
+popup/item_3/text = "Updated"
+popup/item_3/id = 3
+
+[node name="SearchButton" type="Button" parent="PageMargin/PageVBox/FilterBar" unique_id=1336920944]
+custom_minimum_size = Vector2(100, 42)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bold")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("sb_btn_search_n")
+theme_override_styles/pressed = SubResource("sb_btn_search_n")
+theme_override_styles/hover = SubResource("sb_btn_search_h")
+theme_override_styles/focus = SubResource("sb_btn_search_n")
+text = "Search"
+
+[node name="TopSep" type="HSeparator" parent="PageMargin/PageVBox" unique_id=1246894114]
+layout_mode = 2
+theme_override_styles/separator = SubResource("sb_sep")
+
+[node name="StatusLabel" type="Label" parent="PageMargin/PageVBox" unique_id=151880859]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "Loading mods from Modrinth..."
+horizontal_alignment = 1
+
+[node name="ModScroll" type="ScrollContainer" parent="PageMargin/PageVBox" unique_id=2081078207]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ModList" type="VBoxContainer" parent="PageMargin/PageVBox/ModScroll" unique_id=1787296211]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="SampleItem1" parent="PageMargin/PageVBox/ModScroll/ModList" unique_id=1736086274 instance=ExtResource("3_item")]
+layout_mode = 2
+
+[node name="SampleItem2" parent="PageMargin/PageVBox/ModScroll/ModList" unique_id=1336442143 instance=ExtResource("3_item")]
+layout_mode = 2
+
+[node name="LoadMoreButton" type="Button" parent="PageMargin/PageVBox" unique_id=800246669]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("sb_load_more")
+theme_override_styles/pressed = SubResource("sb_load_more")
+theme_override_styles/hover = SubResource("sb_load_more")
+theme_override_styles/focus = SubResource("sb_load_more")
+text = "Load More Mods ▾"
+
+[node name="ModrinthHTTPRequest" type="HTTPRequest" parent="." unique_id=1621413365]
+use_threads = true
