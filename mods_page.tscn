@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dkn7h2w5q3m1p"]
 
 [ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_font"]
+[ext_resource type="Script" uid="uid://dvnacpxoudit7" path="res://scripts/mods_page.gd" id="1_xt35w"]
 [ext_resource type="FontFile" uid="uid://wtqx2hd2ya5u" path="res://fonts/Minecraft Font/Minecraft-Bold.otf" id="2_bold"]
 [ext_resource type="PackedScene" uid="uid://c6xk3m8y7j2p1" path="res://mod_item.tscn" id="3_item"]
 
@@ -93,6 +94,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("sb_page_bg")
+script = ExtResource("1_xt35w")
 
 [node name="PageMargin" type="MarginContainer" parent="." unique_id=1232305765]
 layout_mode = 1
