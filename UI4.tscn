@@ -1,0 +1,537 @@
+[gd_scene format=3 uid="uid://bcpy8fnfebap1"]
+
+[ext_resource type="FontFile" uid="uid://wtqx2hd2ya5u" path="res://fonts/Minecraft Font/Minecraft-Bold.otf" id="1_y55q7"]
+[ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="2_a2fbl"]
+
+[sub_resource type="StyleBoxFlat" id="sb_root"]
+bg_color = Color(0.094, 0.094, 0.11, 1)
+
+[sub_resource type="StyleBoxFlat" id="sb_accent"]
+bg_color = Color(0.176, 0.541, 0.306, 1)
+
+[sub_resource type="StyleBoxFlat" id="sb_tab_on"]
+content_margin_left = 12.0
+content_margin_top = 4.0
+content_margin_right = 12.0
+content_margin_bottom = 4.0
+bg_color = Color(0.165, 0.165, 0.196, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxEmpty" id="sb_tab_off"]
+content_margin_left = 12.0
+content_margin_top = 4.0
+content_margin_right = 12.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="sb_tab_hov"]
+content_margin_left = 12.0
+content_margin_top = 4.0
+content_margin_right = 12.0
+content_margin_bottom = 4.0
+bg_color = Color(0.125, 0.125, 0.149, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="sb_av"]
+bg_color = Color(0.165, 0.165, 0.196, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxLine" id="sb_sep"]
+color = Color(1, 1, 1, 0.06)
+
+[sub_resource type="StyleBoxFlat" id="sb_sel"]
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+bg_color = Color(0.133, 0.133, 0.157, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="sb_ico"]
+bg_color = Color(0.165, 0.165, 0.196, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="sb_row"]
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="sb_add"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.06)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="sb_bottom"]
+bg_color = Color(0.078, 0.078, 0.094, 1)
+
+[sub_resource type="StyleBoxFlat" id="sb_ver"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.133, 0.133, 0.157, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="sb_play_n"]
+bg_color = Color(0.176, 0.541, 0.306, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="sb_play_h"]
+bg_color = Color(0.204, 0.627, 0.353, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="sb_play_p"]
+bg_color = Color(0.149, 0.478, 0.259, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="SentinelLauncher" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("sb_root")
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="AccentBar" type="PanelContainer" parent="MainVBox"]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+theme_override_styles/panel = SubResource("sb_accent")
+
+[node name="TopBar" type="MarginContainer" parent="MainVBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="TopH" type="HBoxContainer" parent="MainVBox/TopBar"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Logo" type="Label" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.541, 0.541, 0.58, 1)
+theme_override_fonts/font = ExtResource("1_y55q7")
+theme_override_font_sizes/font_size = 16
+text = "Sentinel"
+
+[node name="LogoSep" type="Control" parent="MainVBox/TopBar/TopH"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="TabInstances" type="Button" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("sb_tab_on")
+theme_override_styles/hover = SubResource("sb_tab_on")
+theme_override_styles/pressed = SubResource("sb_tab_on")
+theme_override_styles/focus = SubResource("sb_tab_on")
+text = "Instances"
+
+[node name="TabBrowse" type="Button" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.541, 0.541, 0.58, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("sb_tab_off")
+theme_override_styles/hover = SubResource("sb_tab_hov")
+theme_override_styles/pressed = SubResource("sb_tab_hov")
+theme_override_styles/focus = SubResource("sb_tab_off")
+text = "Browse"
+
+[node name="TabSettings" type="Button" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.541, 0.541, 0.58, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("sb_tab_off")
+theme_override_styles/hover = SubResource("sb_tab_hov")
+theme_override_styles/pressed = SubResource("sb_tab_hov")
+theme_override_styles/focus = SubResource("sb_tab_off")
+text = "Settings"
+
+[node name="TopGrow" type="Control" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayerH" type="HBoxContainer" parent="MainVBox/TopBar/TopH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 6
+
+[node name="Av" type="PanelContainer" parent="MainVBox/TopBar/TopH/PlayerH"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_av")
+
+[node name="PName" type="Label" parent="MainVBox/TopBar/TopH/PlayerH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 12
+text = "Not logged in"
+
+[node name="TopSep" type="HSeparator" parent="MainVBox"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("sb_sep")
+
+[node name="Content" type="MarginContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Scroll" type="ScrollContainer" parent="MainVBox/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="List" type="VBoxContainer" parent="MainVBox/Content/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Row1" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_sel")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row1"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row1/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row1/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row1/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "Vanilla 1.21.5"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row1/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.21.5"
+
+[node name="Row2" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_row")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row2"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row2/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row2/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row2/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "Create Mod"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row2/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.20.1 · Fabric"
+
+[node name="Row3" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_row")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row3"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row3/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row3/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row3/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "Fabulously Optimized"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row3/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.21.4 · Fabric"
+
+[node name="Row4" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_row")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row4"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row4/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row4/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row4/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "Cobblemon"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row4/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.20.1 · Fabric"
+
+[node name="Row5" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_row")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row5"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row5/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row5/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row5/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "All The Mods 10"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row5/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.21.1 · NeoForge"
+
+[node name="Row6" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_row")
+
+[node name="H" type="HBoxContainer" parent="MainVBox/Content/Scroll/List/Row6"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Ico" type="PanelContainer" parent="MainVBox/Content/Scroll/List/Row6/H"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("sb_ico")
+
+[node name="T" type="VBoxContainer" parent="MainVBox/Content/Scroll/List/Row6/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="N" type="Label" parent="MainVBox/Content/Scroll/List/Row6/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.91, 0.925, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 14
+text = "RLCraft 2"
+clip_text = true
+
+[node name="I" type="Label" parent="MainVBox/Content/Scroll/List/Row6/H/T"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "1.12.2 · Forge"
+
+[node name="AddRow" type="PanelContainer" parent="MainVBox/Content/Scroll/List"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("sb_add")
+
+[node name="Lbl" type="Label" parent="MainVBox/Content/Scroll/List/AddRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 13
+text = "+   Add Instance"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomBar" type="PanelContainer" parent="MainVBox"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_styles/panel = SubResource("sb_bottom")
+
+[node name="BM" type="MarginContainer" parent="MainVBox/BottomBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_right = 12
+
+[node name="BH" type="HBoxContainer" parent="MainVBox/BottomBar/BM"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="VerOpt" type="OptionButton" parent="MainVBox/BottomBar/BM/BH"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("sb_ver")
+theme_override_styles/hover = SubResource("sb_ver")
+theme_override_styles/pressed = SubResource("sb_ver")
+theme_override_styles/focus = SubResource("sb_ver")
+item_count = 3
+popup/item_0/text = "1.21.5"
+popup/item_0/id = 0
+popup/item_1/text = "1.21.4"
+popup/item_1/id = 1
+popup/item_2/text = "1.20.6"
+popup/item_2/id = 2
+
+[node name="G1" type="Control" parent="MainVBox/BottomBar/BM/BH"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayBtn" type="Button" parent="MainVBox/BottomBar/BM/BH"]
+custom_minimum_size = Vector2(140, 40)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_y55q7")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_play_n")
+theme_override_styles/hover = SubResource("sb_play_h")
+theme_override_styles/pressed = SubResource("sb_play_p")
+theme_override_styles/focus = SubResource("sb_play_n")
+text = "PLAY"
+
+[node name="G2" type="Control" parent="MainVBox/BottomBar/BM/BH"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Status" type="Label" parent="MainVBox/BottomBar/BM/BH"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.353, 0.353, 0.392, 1)
+theme_override_fonts/font = ExtResource("2_a2fbl")
+theme_override_font_sizes/font_size = 11
+text = "Ready to play"
