@@ -223,7 +223,7 @@ theme_override_styles/normal = SubResource("sb_side_item_active")
 theme_override_styles/pressed = SubResource("sb_side_item_active")
 theme_override_styles/hover = SubResource("sb_side_item_active")
 theme_override_styles/focus = SubResource("sb_side_item_active")
-text = "📁  Instances"
+text = "Instances"
 alignment = 0
 
 [node name="BtnMods" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=1140400017]
@@ -235,7 +235,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "🧩  Mods"
+text = "Mods"
 alignment = 0
 
 [node name="BtnResourcepacks" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=1081833080]
@@ -247,7 +247,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "📦  Resourcepacks"
+text = "Resourcepacks"
 alignment = 0
 
 [node name="BtnShader" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=796522052]
@@ -259,7 +259,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "✨  Shader"
+text = "Shader"
 alignment = 0
 
 [node name="BtnWorlds" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=332452645]
@@ -271,7 +271,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "🗺  Worlds"
+text = "Worlds"
 alignment = 0
 
 [node name="BtnScreenshots" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=239620010]
@@ -283,7 +283,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "📷  Screenshots"
+text = "Screenshots"
 alignment = 0
 
 [node name="BtnYou" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=730827185]
@@ -295,7 +295,7 @@ theme_override_styles/normal = SubResource("sb_side_item_inactive")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
 theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "👤  You"
+text = "You"
 alignment = 0
 
 [node name="SidebarSpacer" type="Control" parent="RootLayout/Sidebar/SideContent" unique_id=814078161]
