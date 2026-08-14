@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_font"]
 [ext_resource type="FontFile" uid="uid://wtqx2hd2ya5u" path="res://fonts/Minecraft Font/Minecraft-Bold.otf" id="2_bold"]
+[ext_resource type="PackedScene" uid="uid://dkn7h2w5q3m1p" path="res://mods_page.tscn" id="3_1vn64"]
 
 [sub_resource type="StyleBoxFlat" id="sb_window_bg"]
 bg_color = Color(0.086, 0.086, 0.086, 1)
@@ -326,6 +327,7 @@ text = "⚙  Settings"
 alignment = 0
 
 [node name="MainPanel" type="MarginContainer" parent="RootLayout" unique_id=1630157514]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 20
@@ -480,7 +482,22 @@ theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 16
 text = "➔"
 
-[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayButton" type="Button" parent="." unique_id=613411703]
+[node name="GamertagNPlay" type="Control" parent="." unique_id=817848706]
+anchors_preset = 0
+size_flags_horizontal = 3
+
+[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayerTag" type="Label" parent="GamertagNPlay" unique_id=742071853]
+layout_mode = 0
+offset_left = 1439.0
+offset_top = 821.0
+offset_right = 1525.0
+offset_bottom = 839.0
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+text = "Fletchi_"
+
+[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayButton" type="Button" parent="GamertagNPlay" unique_id=613411703]
 custom_minimum_size = Vector2(300, 62)
 layout_mode = 0
 offset_left = 745.0
@@ -497,17 +514,6 @@ theme_override_styles/hover = SubResource("sb_play_hover")
 theme_override_styles/focus = SubResource("sb_play_normal")
 text = "PLAY"
 
-[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#SpacerRight" type="Control" parent="." unique_id=817848706]
-anchors_preset = 0
-size_flags_horizontal = 3
-
-[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayerTag" type="Label" parent="." unique_id=742071853]
-layout_mode = 0
-offset_left = 1439.0
-offset_top = 821.0
-offset_right = 1525.0
-offset_bottom = 839.0
-theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 18
-text = "Fletchi_"
+[node name="ModsPage" parent="." unique_id=1051520636 instance=ExtResource("3_1vn64")]
+layout_mode = 1
+offset_left = 240.0
