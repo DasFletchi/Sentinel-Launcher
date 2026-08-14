@@ -18,32 +18,41 @@ corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxLine" id="sb_separator"]
 color = Color(1, 1, 1, 0.07)
-thickness = 1
 
-[sub_resource type="StyleBoxFlat" id="sb_tab_active"]
-content_margin_left = 12.0
-content_margin_top = 8.0
-content_margin_right = 12.0
-content_margin_bottom = 8.0
-bg_color = Color(0, 0, 0, 0)
-border_width_bottom = 3
+[sub_resource type="StyleBoxFlat" id="sb_side_item_active"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+bg_color = Color(0.175, 0.175, 0.175, 1)
+border_width_left = 4
 border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 2
 
-[sub_resource type="StyleBoxFlat" id="sb_tab_inactive"]
-content_margin_left = 12.0
-content_margin_top = 8.0
-content_margin_right = 12.0
-content_margin_bottom = 8.0
+[sub_resource type="StyleBoxFlat" id="sb_side_item_inactive"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
 bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="sb_tab_hover"]
-content_margin_left = 12.0
-content_margin_top = 8.0
-content_margin_right = 12.0
-content_margin_bottom = 8.0
-bg_color = Color(1, 1, 1, 0.04)
-border_width_bottom = 2
-border_color = Color(1, 1, 1, 0.5)
+[sub_resource type="StyleBoxFlat" id="sb_side_item_hover"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 0.05)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxFlat" id="sb_hero_bg"]
 bg_color = Color(0.137, 0.137, 0.137, 1)
@@ -52,8 +61,23 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
-[sub_resource type="StyleBoxFlat" id="sb_hero_overlay"]
-bg_color = Color(0.06, 0.06, 0.06, 0.55)
+[sub_resource type="StyleBoxFlat" id="sb_version_btn_n"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.14, 0.14, 0.14, 0.85)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="sb_version_btn_h"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.2, 0.2, 0.2, 0.95)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -66,28 +90,6 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="sb_version_btn_n"]
-content_margin_left = 12.0
-content_margin_top = 8.0
-content_margin_right = 14.0
-content_margin_bottom = 8.0
-bg_color = Color(0.14, 0.14, 0.14, 0.8)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
-[sub_resource type="StyleBoxFlat" id="sb_version_btn_h"]
-content_margin_left = 12.0
-content_margin_top = 8.0
-content_margin_right = 14.0
-content_margin_bottom = 8.0
-bg_color = Color(0.2, 0.2, 0.2, 0.95)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
 [sub_resource type="StyleBoxFlat" id="sb_play_normal"]
 bg_color = Color(0.216, 0.651, 0.231, 1)
 border_width_left = 2
@@ -95,18 +97,6 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 4
 border_color = Color(0.125, 0.435, 0.137, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-
-[sub_resource type="StyleBoxFlat" id="sb_play_hover"]
-bg_color = Color(0.278, 0.749, 0.298, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 4
-border_color = Color(0.157, 0.518, 0.173, 1)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
@@ -124,42 +114,19 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="sb_side_item_active"]
-content_margin_left = 12.0
-content_margin_top = 10.0
-content_margin_right = 12.0
-content_margin_bottom = 10.0
-bg_color = Color(0.165, 0.165, 0.165, 1)
-border_width_left = 4
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 2
-
-[sub_resource type="StyleBoxFlat" id="sb_side_item_inactive"]
-content_margin_left = 12.0
-content_margin_top = 10.0
-content_margin_right = 12.0
-content_margin_bottom = 10.0
-bg_color = Color(0, 0, 0, 0)
+[sub_resource type="StyleBoxFlat" id="sb_play_hover"]
+bg_color = Color(0.278, 0.749, 0.298, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color(0.157, 0.518, 0.173, 1)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="StyleBoxFlat" id="sb_side_item_hover"]
-content_margin_left = 12.0
-content_margin_top = 10.0
-content_margin_right = 12.0
-content_margin_bottom = 10.0
-bg_color = Color(1, 1, 1, 0.05)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-
-[node name="SentinelLauncher" type="Panel"]
+[node name="SentinelLauncher" type="Panel" unique_id=946362468]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -167,7 +134,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("sb_window_bg")
 
-[node name="RootLayout" type="HBoxContainer" parent="."]
+[node name="RootLayout" type="HBoxContainer" parent="." unique_id=1446857028]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -176,33 +143,33 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="Sidebar" type="PanelContainer" parent="RootLayout"]
-custom_minimum_size = Vector2(250, 0)
+[node name="Sidebar" type="PanelContainer" parent="RootLayout" unique_id=1583569045]
+custom_minimum_size = Vector2(240, 0)
 layout_mode = 2
 theme_override_styles/panel = SubResource("sb_sidebar")
 
-[node name="SideContent" type="VBoxContainer" parent="RootLayout/Sidebar"]
+[node name="SideContent" type="VBoxContainer" parent="RootLayout/Sidebar" unique_id=311093567]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="AccountSection" type="MarginContainer" parent="RootLayout/Sidebar/SideContent"]
+[node name="AccountSection" type="MarginContainer" parent="RootLayout/Sidebar/SideContent" unique_id=2110648038]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 18
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 18
 
-[node name="AccountHBox" type="HBoxContainer" parent="RootLayout/Sidebar/SideContent/AccountSection"]
+[node name="AccountHBox" type="HBoxContainer" parent="RootLayout/Sidebar/SideContent/AccountSection" unique_id=1167422810]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Avatar" type="PanelContainer" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox"]
+[node name="Avatar" type="PanelContainer" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox" unique_id=1445933192]
 custom_minimum_size = Vector2(42, 42)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("sb_avatar")
 
-[node name="AvatarIcon" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/Avatar"]
+[node name="AvatarIcon" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/Avatar" unique_id=12953697]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
 theme_override_fonts/font = ExtResource("1_font")
@@ -211,13 +178,13 @@ text = "☺"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AccountInfo" type="VBoxContainer" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox"]
+[node name="AccountInfo" type="VBoxContainer" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox" unique_id=337645553]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_constants/separation = 2
 
-[node name="Username" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/AccountInfo"]
+[node name="Username" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/AccountInfo" unique_id=898537574]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
@@ -225,259 +192,204 @@ theme_override_font_sizes/font_size = 18
 text = "HundOderSo2718 ▾"
 clip_text = true
 
-[node name="AccountType" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/AccountInfo"]
+[node name="AccountType" type="Label" parent="RootLayout/Sidebar/SideContent/AccountSection/AccountHBox/AccountInfo" unique_id=1965353306]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 13
 text = "Microsoft account"
 
-[node name="SideSep1" type="HSeparator" parent="RootLayout/Sidebar/SideContent"]
+[node name="SideSep1" type="HSeparator" parent="RootLayout/Sidebar/SideContent" unique_id=1711264648]
 layout_mode = 2
 theme_override_styles/separator = SubResource("sb_separator")
 
-[node name="NavMargin" type="MarginContainer" parent="RootLayout/Sidebar/SideContent"]
+[node name="NavMargin" type="MarginContainer" parent="RootLayout/Sidebar/SideContent" unique_id=1942468875]
 layout_mode = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 16
+theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_bottom = 12
 
-[node name="NavList" type="VBoxContainer" parent="RootLayout/Sidebar/SideContent/NavMargin"]
+[node name="NavList" type="VBoxContainer" parent="RootLayout/Sidebar/SideContent/NavMargin" unique_id=166806449]
 layout_mode = 2
-theme_override_constants/separation = 6
+theme_override_constants/separation = 4
 
-[node name="BtnNews" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 18
-theme_override_styles/normal = SubResource("sb_side_item_inactive")
-theme_override_styles/hover = SubResource("sb_side_item_hover")
-theme_override_styles/pressed = SubResource("sb_side_item_inactive")
-theme_override_styles/focus = SubResource("sb_side_item_inactive")
-text = "📰  News"
-alignment = 0
-
-[node name="BtnJava" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList"]
+[node name="BtnInstances" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=488914420]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("sb_side_item_active")
-theme_override_styles/hover = SubResource("sb_side_item_active")
 theme_override_styles/pressed = SubResource("sb_side_item_active")
+theme_override_styles/hover = SubResource("sb_side_item_active")
 theme_override_styles/focus = SubResource("sb_side_item_active")
-text = "🟩  Sentinel: Java"
+text = "📁  Instances"
 alignment = 0
 
-[node name="SidebarSpacer" type="Control" parent="RootLayout/Sidebar/SideContent"]
+[node name="BtnMods" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=1140400017]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "🧩  Mods"
+alignment = 0
+
+[node name="BtnResourcepacks" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=1081833080]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "📦  Resourcepacks"
+alignment = 0
+
+[node name="BtnShader" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=796522052]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "✨  Shader"
+alignment = 0
+
+[node name="BtnWorlds" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=332452645]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "🗺  Worlds"
+alignment = 0
+
+[node name="BtnScreenshots" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=239620010]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "📷  Screenshots"
+alignment = 0
+
+[node name="BtnYou" type="Button" parent="RootLayout/Sidebar/SideContent/NavMargin/NavList" unique_id=730827185]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("sb_side_item_inactive")
+theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
+theme_override_styles/focus = SubResource("sb_side_item_inactive")
+text = "👤  You"
+alignment = 0
+
+[node name="SidebarSpacer" type="Control" parent="RootLayout/Sidebar/SideContent" unique_id=814078161]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="SideSep2" type="HSeparator" parent="RootLayout/Sidebar/SideContent"]
+[node name="SideSep2" type="HSeparator" parent="RootLayout/Sidebar/SideContent" unique_id=1848534832]
 layout_mode = 2
 theme_override_styles/separator = SubResource("sb_separator")
 
-[node name="SettingsSection" type="MarginContainer" parent="RootLayout/Sidebar/SideContent"]
+[node name="SettingsSection" type="MarginContainer" parent="RootLayout/Sidebar/SideContent" unique_id=1402651961]
 layout_mode = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 12
+theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_bottom = 14
 
-[node name="BtnSettings" type="Button" parent="RootLayout/Sidebar/SideContent/SettingsSection"]
+[node name="BtnSettings" type="Button" parent="RootLayout/Sidebar/SideContent/SettingsSection" unique_id=1261039075]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("sb_side_item_inactive")
-theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/pressed = SubResource("sb_side_item_inactive")
+theme_override_styles/hover = SubResource("sb_side_item_hover")
 theme_override_styles/focus = SubResource("sb_side_item_inactive")
 text = "⚙  Settings"
 alignment = 0
 
-[node name="MainPanel" type="VBoxContainer" parent="RootLayout"]
+[node name="MainPanel" type="MarginContainer" parent="RootLayout" unique_id=1630157514]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 0
-
-[node name="HeaderContainer" type="MarginContainer" parent="RootLayout/MainPanel"]
-layout_mode = 2
-theme_override_constants/margin_left = 28
-theme_override_constants/margin_top = 18
-theme_override_constants/margin_right = 28
-theme_override_constants/margin_bottom = 8
-
-[node name="HeaderVBox" type="VBoxContainer" parent="RootLayout/MainPanel/HeaderContainer"]
-layout_mode = 2
-theme_override_constants/separation = 6
-
-[node name="EditionLabel" type="Label" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
-theme_override_fonts/font = ExtResource("2_bold")
-theme_override_font_sizes/font_size = 14
-text = "MINECRAFT: JAVA EDITION"
-
-[node name="TabBarHBox" type="HBoxContainer" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox"]
-layout_mode = 2
-theme_override_constants/separation = 4
-
-[node name="TabInstances" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_bold")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_active")
-theme_override_styles/hover = SubResource("sb_tab_active")
-theme_override_styles/pressed = SubResource("sb_tab_active")
-theme_override_styles/focus = SubResource("sb_tab_active")
-text = "Instances"
-
-[node name="TabMods" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Mods"
-
-[node name="TabResourcepacks" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Resourcepacks"
-
-[node name="TabShader" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Shader"
-
-[node name="TabWorlds" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Worlds"
-
-[node name="TabScreenshots" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Screenshots"
-
-[node name="TabYou" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "You"
-
-[node name="TabSettings" type="Button" parent="RootLayout/MainPanel/HeaderContainer/HeaderVBox/TabBarHBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("sb_tab_inactive")
-theme_override_styles/hover = SubResource("sb_tab_hover")
-theme_override_styles/pressed = SubResource("sb_tab_hover")
-theme_override_styles/focus = SubResource("sb_tab_inactive")
-text = "Settings"
-
-[node name="ContentArea" type="MarginContainer" parent="RootLayout/MainPanel"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 28
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_right = 28
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="ContentVBox" type="VBoxContainer" parent="RootLayout/MainPanel/ContentArea"]
+[node name="ContentVBox" type="VBoxContainer" parent="RootLayout/MainPanel" unique_id=1958776846]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="HeroContainer" type="PanelContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox"]
+[node name="HeroContainer" type="PanelContainer" parent="RootLayout/MainPanel/ContentVBox" unique_id=2098329014]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("sb_hero_bg")
 
-[node name="HeroContent" type="MarginContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer"]
+[node name="HeroContent" type="MarginContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer" unique_id=452648389]
 layout_mode = 2
-theme_override_constants/margin_left = 24
-theme_override_constants/margin_top = 24
-theme_override_constants/margin_right = 24
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
 theme_override_constants/margin_bottom = 24
 
-[node name="HeroVBox" type="VBoxContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent"]
+[node name="HeroVBox" type="VBoxContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent" unique_id=2120105477]
 layout_mode = 2
 
-[node name="HeroTopSpacer" type="Control" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox"]
+[node name="HeroTopSpacer" type="Control" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox" unique_id=2096231040]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MinecraftLogoLabel" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox"]
+[node name="MinecraftLogoLabel" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox" unique_id=402518212]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 0.9)
+theme_override_colors/font_color = Color(1, 1, 1, 0.95)
 theme_override_fonts/font = ExtResource("2_bold")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 52
 text = "MINECRAFT"
 horizontal_alignment = 1
 
-[node name="JavaEditionLabel" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox"]
+[node name="JavaEditionLabel" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox" unique_id=1000429991]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 0.8)
+theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 0.85)
 theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 24
 text = "JAVA EDITION"
 horizontal_alignment = 1
 
-[node name="HeroBotSpacer" type="Control" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox"]
+[node name="HeroBotSpacer" type="Control" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox" unique_id=308249368]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="BottomActionPanel" type="HBoxContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox"]
+[node name="BottomActionPanel" type="HBoxContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox" unique_id=1497874861]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="VersionSelector" type="Button" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel"]
-custom_minimum_size = Vector2(240, 60)
+[node name="VersionSelector" type="Button" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel" unique_id=650727748]
+custom_minimum_size = Vector2(250, 62)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/normal = SubResource("sb_version_btn_n")
-theme_override_styles/hover = SubResource("sb_version_btn_h")
 theme_override_styles/pressed = SubResource("sb_version_btn_h")
+theme_override_styles/hover = SubResource("sb_version_btn_h")
 theme_override_styles/focus = SubResource("sb_version_btn_n")
 
-[node name="VerHBox" type="HBoxContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector"]
+[node name="VerHBox" type="HBoxContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector" unique_id=1657490207]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -486,110 +398,114 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 12
 
-[node name="GrassBlockIcon" type="PanelContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox"]
+[node name="GrassBlockIcon" type="PanelContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox" unique_id=1233287478]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("sb_avatar")
 
-[node name="GrassEmoji" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/GrassBlockIcon"]
+[node name="GrassEmoji" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/GrassBlockIcon" unique_id=1592033463]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 22
 text = "🟩"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VerTextStack" type="VBoxContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox"]
+[node name="VerTextStack" type="VBoxContainer" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox" unique_id=772565329]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_constants/separation = 1
+theme_override_constants/separation = 2
 
-[node name="ReleaseTitle" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/VerTextStack"]
+[node name="ReleaseTitle" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/VerTextStack" unique_id=961759457]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
 theme_override_font_sizes/font_size = 18
 text = "Latest release"
 
-[node name="VersionNumber" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/VerTextStack"]
+[node name="VersionNumber" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox/VerTextStack" unique_id=908882773]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 14
 text = "1.21.5"
 
-[node name="Arrow" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox"]
+[node name="Arrow" type="Label" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel/VersionSelector/VerHBox" unique_id=30927169]
 layout_mode = 2
-size_flags_vertical = 4
 theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 16
 text = "▾"
 
-[node name="SpacerLeft" type="Control" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel"]
+[node name="SpacerLeft" type="Control" parent="RootLayout/MainPanel/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel" unique_id=2090323348]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PlayButton" type="Button" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel"]
-custom_minimum_size = Vector2(300, 60)
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_bold")
-theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = SubResource("sb_play_normal")
-theme_override_styles/hover = SubResource("sb_play_hover")
-theme_override_styles/pressed = SubResource("sb_play_pressed")
-theme_override_styles/focus = SubResource("sb_play_normal")
-text = "PLAY"
-
-[node name="SpacerRight" type="Control" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PlayerTag" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/HeroContainer/HeroContent/HeroVBox/BottomActionPanel"]
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
-theme_override_fonts/font = ExtResource("1_font")
-theme_override_font_sizes/font_size = 18
-text = "Fletchi_"
-
-[node name="NewsBanner" type="PanelContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox"]
+[node name="NewsBanner" type="PanelContainer" parent="RootLayout/MainPanel/ContentVBox" unique_id=1110542454]
 custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 theme_override_styles/panel = SubResource("sb_news_banner")
 
-[node name="NewsMargin" type="MarginContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/NewsBanner"]
+[node name="NewsMargin" type="MarginContainer" parent="RootLayout/MainPanel/ContentVBox/NewsBanner" unique_id=443161981]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_right = 20
 
-[node name="NewsHBox" type="HBoxContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/NewsBanner/NewsMargin"]
+[node name="NewsHBox" type="HBoxContainer" parent="RootLayout/MainPanel/ContentVBox/NewsBanner/NewsMargin" unique_id=467106654]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="NewsThumbnail" type="PanelContainer" parent="RootLayout/MainPanel/ContentArea/ContentVBox/NewsBanner/NewsMargin/NewsHBox"]
+[node name="NewsThumbnail" type="PanelContainer" parent="RootLayout/MainPanel/ContentVBox/NewsBanner/NewsMargin/NewsHBox" unique_id=357553807]
 custom_minimum_size = Vector2(80, 46)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("sb_avatar")
 
-[node name="NewsTitle" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/NewsBanner/NewsMargin/NewsHBox"]
+[node name="NewsTitle" type="Label" parent="RootLayout/MainPanel/ContentVBox/NewsBanner/NewsMargin/NewsHBox" unique_id=1990225973]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
 theme_override_font_sizes/font_size = 18
 text = "WHAT'S NEW IN MINECRAFT 1.21 · THE TRICKY TRIALS UPDATE"
 clip_text = true
 
-[node name="NewsArrow" type="Label" parent="RootLayout/MainPanel/ContentArea/ContentVBox/NewsBanner/NewsMargin/NewsHBox"]
+[node name="NewsArrow" type="Label" parent="RootLayout/MainPanel/ContentVBox/NewsBanner/NewsMargin/NewsHBox" unique_id=155614292]
 layout_mode = 2
-size_flags_vertical = 4
 theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 16
 text = "➔"
+
+[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayButton" type="Button" parent="." unique_id=613411703]
+custom_minimum_size = Vector2(300, 62)
+layout_mode = 0
+offset_left = 745.0
+offset_top = 803.0
+offset_right = 1045.0
+offset_bottom = 865.0
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bold")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("sb_play_normal")
+theme_override_styles/pressed = SubResource("sb_play_pressed")
+theme_override_styles/hover = SubResource("sb_play_hover")
+theme_override_styles/focus = SubResource("sb_play_normal")
+text = "PLAY"
+
+[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#SpacerRight" type="Control" parent="." unique_id=817848706]
+anchors_preset = 0
+size_flags_horizontal = 3
+
+[node name="RootLayout_MainPanel_ContentArea_ContentVBox_HeroContainer_HeroContent_HeroVBox_BottomActionPanel#PlayerTag" type="Label" parent="." unique_id=742071853]
+layout_mode = 0
+offset_left = 1439.0
+offset_top = 821.0
+offset_right = 1525.0
+offset_bottom = 839.0
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 18
+text = "Fletchi_"
