@@ -1,272 +1,622 @@
 [gd_scene format=3 uid="uid://dfthwwo3ngrt8"]
 
-[ext_resource type="FontFile" uid="uid://cwagqfqwdxawe" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_ig7tw"]
+[ext_resource type="FontFile" path="res://fonts/Minecraft Font/Minecraft.otf" id="1_font"]
+[ext_resource type="FontFile" path="res://fonts/Minecraft Font/Minecraft-Bold.otf" id="2_font"]
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_footer_separator"]
-color = Color(1, 1, 1, 0.19607843)
-thickness = 2
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_root"]
+bg_color = Color(0.0745, 0.0745, 0.0863, 1)
 
-[node name="SentinelLauncher" type="Control" unique_id=1310285605]
-layout_mode = 3
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sidebar"]
+bg_color = Color(0.102, 0.102, 0.1176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nav_active"]
+bg_color = Color(0.1647, 0.1647, 0.1961, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nav"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card"]
+bg_color = Color(0.1333, 0.1333, 0.1569, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card_img"]
+bg_color = Color(0.1176, 0.1176, 0.1412, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card_add"]
+bg_color = Color(0.1176, 0.1176, 0.1412, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bottom_bar"]
+bg_color = Color(0.102, 0.102, 0.1176, 1)
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_normal"]
+bg_color = Color(0.1765, 0.5412, 0.3059, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_hover"]
+bg_color = Color(0.2039, 0.6275, 0.3529, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_pressed"]
+bg_color = Color(0.149, 0.4784, 0.2588, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_version"]
+bg_color = Color(0.1333, 0.1333, 0.1569, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_avatar"]
+bg_color = Color(0.1647, 0.1647, 0.1961, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="SentinelLauncher" type="Panel"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_root")
 
-[node name="Title" type="Label" parent="." unique_id=346670936]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.32
-offset_right = -46.94995
-offset_bottom = 46.00003
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 33
-text = "Sentinel Launcher"
-
-[node name="Pages" type="TabContainer" parent="." unique_id=2064845284]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.04
-anchor_top = 0.08
-anchor_right = 0.96
-anchor_bottom = 0.8
-offset_left = -63.0
-offset_top = -72.0
-offset_right = 69.0
-offset_bottom = 198.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/side_margin = 0
-theme_override_constants/tab_separation = 0
-theme_override_fonts/font = ExtResource("1_ig7tw")
-theme_override_font_sizes/font_size = 26
-tab_alignment = 2
-current_tab = 0
-tab_4/title = "Worlds"
-tab_5/title = "Screenshots"
-tab_6/title = "You"
-tab_7/title = "Settings"
-
-[node name="Instances" type="Control" parent="Pages" unique_id=1070538521]
-layout_mode = 2
-metadata/_tab_index = 0
-
-[node name="Content" type="VBoxContainer" parent="Pages/Instances" unique_id=1866682337]
+[node name="MainLayout" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 24.0
-offset_top = 28.0
-offset_right = -24.0
-offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+theme_override_constants/separation = 0
 
-[node name="Modpacks" type="GridContainer" parent="Pages/Instances/Content" unique_id=121047195]
+[node name="Sidebar" type="PanelContainer" parent="MainLayout"]
+custom_minimum_size = Vector2(64, 0)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-columns = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_sidebar")
 
-[node name="Modpack1" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=722321174]
-custom_minimum_size = Vector2(170, 190)
+[node name="VBox" type="VBoxContainer" parent="MainLayout/Sidebar"]
 layout_mode = 2
 
-[node name="Placeholder" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/Modpack1" unique_id=476412755]
-custom_minimum_size = Vector2(150, 120)
+[node name="TopMargin" type="MarginContainer" parent="MainLayout/Sidebar/VBox"]
 layout_mode = 2
+theme_override_constants/margin_top = 16
 
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/Modpack1" unique_id=77022287]
+[node name="BtnHome" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
-text = "Modpack
-Placeholder"
-horizontal_alignment = 1
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_nav_active")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nav_active")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nav_active")
+theme_override_styles/normal = SubResource("StyleBoxFlat_nav_active")
 
-[node name="Modpack2" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=1978166657]
-custom_minimum_size = Vector2(170, 190)
-layout_mode = 2
-
-[node name="Placeholder" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/Modpack2" unique_id=606450496]
-custom_minimum_size = Vector2(150, 120)
-layout_mode = 2
-
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/Modpack2" unique_id=656742079]
-layout_mode = 2
-text = "Modpack
-Placeholder"
-horizontal_alignment = 1
-
-[node name="Modpack3" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=2063436340]
-custom_minimum_size = Vector2(170, 190)
-layout_mode = 2
-
-[node name="Placeholder" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/Modpack3" unique_id=266208304]
-custom_minimum_size = Vector2(150, 120)
-layout_mode = 2
-
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/Modpack3" unique_id=1562576972]
-layout_mode = 2
-text = "Modpack
-Placeholder"
-horizontal_alignment = 1
-
-[node name="Modpack4" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=164460131]
-custom_minimum_size = Vector2(170, 190)
-layout_mode = 2
-
-[node name="Placeholder" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/Modpack4" unique_id=787423166]
-custom_minimum_size = Vector2(150, 120)
-layout_mode = 2
-
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/Modpack4" unique_id=1328545818]
-layout_mode = 2
-text = "Modpack
-Placeholder"
-horizontal_alignment = 1
-
-[node name="Modpack5" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=1341294840]
-custom_minimum_size = Vector2(170, 190)
-layout_mode = 2
-
-[node name="Placeholder" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/Modpack5" unique_id=1234291195]
-custom_minimum_size = Vector2(150, 120)
-layout_mode = 2
-
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/Modpack5" unique_id=141571983]
-layout_mode = 2
-text = "Modpack
-Placeholder"
-horizontal_alignment = 1
-
-[node name="DownloadModpack" type="VBoxContainer" parent="Pages/Instances/Content/Modpacks" unique_id=2043117442]
-custom_minimum_size = Vector2(170, 190)
-layout_mode = 2
-
-[node name="Plus" type="PanelContainer" parent="Pages/Instances/Content/Modpacks/DownloadModpack" unique_id=640952651]
-custom_minimum_size = Vector2(150, 120)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Pages/Instances/Content/Modpacks/DownloadModpack/Plus" unique_id=1725559324]
-layout_mode = 2
-theme_override_font_sizes/font_size = 33
-text = "+"
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnHome"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 24
+text = "⌂"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Name" type="Label" parent="Pages/Instances/Content/Modpacks/DownloadModpack" unique_id=738231482]
+[node name="BtnMods" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
-text = "Download new
-Modpack"
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nav")
+
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnMods"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 20
+text = "✦"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnRes" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nav")
+
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnRes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 20
+text = "◆"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnShader" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nav")
+
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnShader"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 20
+text = "◐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnWorlds" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nav")
+
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnWorlds"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 20
+text = "⊞"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="MainLayout/Sidebar/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BtnSettings" type="Button" parent="MainLayout/Sidebar/VBox"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nav")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nav")
+
+[node name="Label" type="Label" parent="MainLayout/Sidebar/VBox/BtnSettings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_font_sizes/font_size = 22
+text = "⚙"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotMargin" type="MarginContainer" parent="MainLayout/Sidebar/VBox"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 16
+
+[node name="MainContent" type="VBoxContainer" parent="MainLayout"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="Header" type="MarginContainer" parent="MainLayout/MainContent"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 16
+
+[node name="Title" type="Label" parent="MainLayout/MainContent/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5412, 0.5412, 0.5804, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 22
+text = "Sentinel"
+
+[node name="GridMargin" type="MarginContainer" parent="MainLayout/MainContent"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 16
+
+[node name="Grid" type="GridContainer" parent="MainLayout/MainContent/GridMargin"]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="Card1" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card1"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card1/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card1/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card1/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card1/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "Vanilla 1.21.5"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card1/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.21.5"
+
+[node name="Card2" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card2"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card2/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card2/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card2/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card2/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "Create Mod"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card2/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.20.1"
+
+[node name="Card3" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card3"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card3/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card3/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card3/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card3/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "Fabulously Optimized"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card3/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.21.4"
+
+[node name="Card4" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card4"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card4/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card4/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card4/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card4/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "Cobblemon"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card4/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.20.1"
+
+[node name="Card5" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card5"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card5/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card5/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card5/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card5/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "All The Mods 10"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card5/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.21.1"
+
+[node name="Card6" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card6"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="IconArea" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card6/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_img")
+
+[node name="InfoArea" type="MarginContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card6/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Labels" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/Card6/VBox/InfoArea"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card6/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098, 0.9098, 0.9255, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 16
+text = "RLCraft 2"
+
+[node name="Version" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/Card6/VBox/InfoArea/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_fonts/font = ExtResource("1_font")
+theme_override_font_sizes/font_size = 12
+text = "Minecraft 1.12.2"
+
+[node name="CardAdd" type="PanelContainer" parent="MainLayout/MainContent/GridMargin/Grid"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_add")
+
+[node name="VBox" type="VBoxContainer" parent="MainLayout/MainContent/GridMargin/Grid/CardAdd"]
+layout_mode = 2
+alignment = 1
+
+[node name="Plus" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/CardAdd/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_font_sizes/font_size = 48
+text = "+"
 horizontal_alignment = 1
 
-[node name="FooterSeparator" type="HSeparator" parent="Pages/Instances" unique_id=1184897042]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.8
-anchor_right = 1.0
-anchor_bottom = 0.8
-offset_left = 48.0
-offset_top = -1.0
-offset_right = -48.0
-offset_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/separator = SubResource("StyleBoxLine_footer_separator")
+[node name="Text" type="Label" parent="MainLayout/MainContent/GridMargin/Grid/CardAdd/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_font_sizes/font_size = 14
+text = "New Instance"
+horizontal_alignment = 1
 
-[node name="Play" type="Button" parent="Pages/Instances" unique_id=1491213259]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.32
-anchor_top = 0.81
-anchor_right = 0.68
-anchor_bottom = 0.89
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 33
+[node name="BottomBar" type="PanelContainer" parent="MainLayout/MainContent"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bottom_bar")
+
+[node name="HBox" type="HBoxContainer" parent="MainLayout/MainContent/BottomBar"]
+layout_mode = 2
+
+[node name="LeftSpacer" type="Control" parent="MainLayout/MainContent/BottomBar/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayBtn" type="Button" parent="MainLayout/MainContent/BottomBar/HBox"]
+custom_minimum_size = Vector2(320, 52)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxFlat_play_normal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_play_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_play_pressed")
+theme_override_styles/normal = SubResource("StyleBoxFlat_play_normal")
 text = "PLAY"
 
-[node name="DownloadStatus" type="Label" parent="Pages/Instances" unique_id=261881545]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.3
-anchor_top = 0.89
-anchor_right = 0.7
-anchor_bottom = 0.96
-offset_top = 8.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Downloading Requirements for Modpack"
-horizontal_alignment = 1
-
-[node name="PlayingAs" type="Label" parent="Pages/Instances" unique_id=2133747816]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.7
-anchor_top = 0.81
-anchor_right = 0.94
-anchor_bottom = 0.88
-offset_left = 8.0
-offset_right = -8.0
-offset_bottom = 23.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Playing as: \"not logged in\""
-horizontal_alignment = 2
-
-[node name="PlayerHeadPlaceholder" type="PanelContainer" parent="Pages/Instances" unique_id=1016713709]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.94
-anchor_top = 0.81
-anchor_right = 0.98
-anchor_bottom = 0.88
-offset_left = -4.76001
-offset_top = 6.450012
-offset_right = -51.920044
-offset_bottom = -45.400024
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="Mods" type="Control" parent="Pages" unique_id=1963381227]
-visible = false
+[node name="MidSpacer" type="Control" parent="MainLayout/MainContent/BottomBar/HBox"]
+custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
-metadata/_tab_index = 1
 
-[node name="Resourcepacks" type="Control" parent="Pages" unique_id=521218476]
-visible = false
+[node name="VersionOpt" type="OptionButton" parent="MainLayout/MainContent/BottomBar/HBox"]
+custom_minimum_size = Vector2(140, 44)
 layout_mode = 2
-metadata/_tab_index = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 14
+theme_override_styles/focus = SubResource("StyleBoxFlat_version")
+theme_override_styles/hover = SubResource("StyleBoxFlat_version")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_version")
+theme_override_styles/normal = SubResource("StyleBoxFlat_version")
+item_count = 3
+popup/item_0/text = "1.21.5"
+popup/item_0/id = 0
+popup/item_1/text = "1.21.4"
+popup/item_1/id = 1
+popup/item_2/text = "1.20.6"
+popup/item_2/id = 2
 
-[node name="Shader" type="Control" parent="Pages" unique_id=2031246969]
-visible = false
+[node name="RightSpacer" type="Control" parent="MainLayout/MainContent/BottomBar/HBox"]
 layout_mode = 2
-metadata/_tab_index = 3
+size_flags_horizontal = 3
 
-[node name="Skins & Capes" type="Control" parent="Pages" unique_id=1543554621]
-visible = false
+[node name="PlayerBox" type="HBoxContainer" parent="MainLayout/MainContent/BottomBar/HBox"]
 layout_mode = 2
-metadata/_tab_index = 4
-metadata/_tab_name = "Worlds"
+size_flags_vertical = 4
 
-[node name="Worlds & Screenshots" type="Control" parent="Pages" unique_id=857543663]
-visible = false
+[node name="Avatar" type="PanelContainer" parent="MainLayout/MainContent/BottomBar/HBox/PlayerBox"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
-metadata/_tab_index = 5
-metadata/_tab_name = "Screenshots"
+theme_override_styles/panel = SubResource("StyleBoxFlat_avatar")
 
-[node name="Test" type="Control" parent="Pages" unique_id=231704861]
-visible = false
+[node name="AvatarSpacer" type="Control" parent="MainLayout/MainContent/BottomBar/HBox/PlayerBox"]
+custom_minimum_size = Vector2(8, 0)
 layout_mode = 2
-metadata/_tab_index = 6
-metadata/_tab_name = "You"
 
-[node name="Settings & Config" type="Control" parent="Pages" unique_id=1831234399]
-visible = false
+[node name="PlayerText" type="VBoxContainer" parent="MainLayout/MainContent/BottomBar/HBox/PlayerBox"]
 layout_mode = 2
-metadata/_tab_index = 7
-metadata/_tab_name = "Settings"
+alignment = 1
+
+[node name="Name" type="Label" parent="MainLayout/MainContent/BottomBar/HBox/PlayerBox/PlayerText"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5412, 0.5412, 0.5804, 1)
+theme_override_font_sizes/font_size = 13
+text = "Not logged in"
+
+[node name="Type" type="Label" parent="MainLayout/MainContent/BottomBar/HBox/PlayerBox/PlayerText"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3529, 0.3529, 0.3922, 1)
+theme_override_font_sizes/font_size = 11
+text = "Microsoft Account"
+
+[node name="EndSpacer" type="Control" parent="MainLayout/MainContent/BottomBar/HBox"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
