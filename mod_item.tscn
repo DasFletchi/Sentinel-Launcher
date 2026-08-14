@@ -50,19 +50,6 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
-[sub_resource type="StyleBoxFlat" id="sb_btn_install_h"]
-content_margin_left = 16.0
-content_margin_top = 8.0
-content_margin_right = 16.0
-content_margin_bottom = 8.0
-bg_color = Color(0.278, 0.749, 0.298, 1)
-border_width_bottom = 3
-border_color = Color(0.157, 0.518, 0.173, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-
 [sub_resource type="StyleBoxFlat" id="sb_btn_install_p"]
 content_margin_left = 16.0
 content_margin_top = 9.0
@@ -76,7 +63,20 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
-[node name="ModItem" type="PanelContainer"]
+[sub_resource type="StyleBoxFlat" id="sb_btn_install_h"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.278, 0.749, 0.298, 1)
+border_width_bottom = 3
+border_color = Color(0.157, 0.518, 0.173, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="ModItem" type="PanelContainer" unique_id=1141017403]
 custom_minimum_size = Vector2(0, 80)
 anchors_preset = 10
 anchor_right = 1.0
@@ -85,46 +85,46 @@ grow_horizontal = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("sb_card_normal")
 
-[node name="ItemHBox" type="HBoxContainer" parent="."]
+[node name="ItemHBox" type="HBoxContainer" parent="." unique_id=1827955004]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="IconContainer" type="PanelContainer" parent="ItemHBox"]
+[node name="IconContainer" type="PanelContainer" parent="ItemHBox" unique_id=431206407]
 custom_minimum_size = Vector2(56, 56)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("sb_icon_bg")
 
-[node name="ModIcon" type="TextureRect" parent="ItemHBox/IconContainer"]
+[node name="ModIcon" type="TextureRect" parent="ItemHBox/IconContainer" unique_id=1588991948]
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="InfoVBox" type="VBoxContainer" parent="ItemHBox"]
+[node name="InfoVBox" type="VBoxContainer" parent="ItemHBox" unique_id=1735708295]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_constants/separation = 4
 
-[node name="TitleHBox" type="HBoxContainer" parent="ItemHBox/InfoVBox"]
+[node name="TitleHBox" type="HBoxContainer" parent="ItemHBox/InfoVBox" unique_id=1058421875]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="ModTitle" type="Label" parent="ItemHBox/InfoVBox/TitleHBox"]
+[node name="ModTitle" type="Label" parent="ItemHBox/InfoVBox/TitleHBox" unique_id=1154341106]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
 theme_override_font_sizes/font_size = 18
 text = "Mod Title Placeholder"
 
-[node name="AuthorLabel" type="Label" parent="ItemHBox/InfoVBox/TitleHBox"]
+[node name="AuthorLabel" type="Label" parent="ItemHBox/InfoVBox/TitleHBox" unique_id=1685185848]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 14
 text = "by Author"
 
-[node name="ModDescription" type="Label" parent="ItemHBox/InfoVBox"]
+[node name="ModDescription" type="Label" parent="ItemHBox/InfoVBox" unique_id=1671582761]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
 theme_override_fonts/font = ExtResource("1_font")
@@ -132,38 +132,38 @@ theme_override_font_sizes/font_size = 14
 text = "Short description of what this mod accomplishes in the game."
 text_overrun_behavior = 3
 
-[node name="MetaHBox" type="HBoxContainer" parent="ItemHBox/InfoVBox"]
+[node name="MetaHBox" type="HBoxContainer" parent="ItemHBox/InfoVBox" unique_id=672251106]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="DownloadsTag" type="PanelContainer" parent="ItemHBox/InfoVBox/MetaHBox"]
+[node name="DownloadsTag" type="PanelContainer" parent="ItemHBox/InfoVBox/MetaHBox" unique_id=1393410223]
 layout_mode = 2
 theme_override_styles/panel = SubResource("sb_tag")
 
-[node name="DownloadsLabel" type="Label" parent="ItemHBox/InfoVBox/MetaHBox/DownloadsTag"]
+[node name="DownloadsLabel" type="Label" parent="ItemHBox/InfoVBox/MetaHBox/DownloadsTag" unique_id=1619553456]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 12
 text = "⬇ 1.2M Downloads"
 
-[node name="LoaderTag" type="PanelContainer" parent="ItemHBox/InfoVBox/MetaHBox"]
+[node name="LoaderTag" type="PanelContainer" parent="ItemHBox/InfoVBox/MetaHBox" unique_id=1961152106]
 layout_mode = 2
 theme_override_styles/panel = SubResource("sb_tag")
 
-[node name="LoaderLabel" type="Label" parent="ItemHBox/InfoVBox/MetaHBox/LoaderTag"]
+[node name="LoaderLabel" type="Label" parent="ItemHBox/InfoVBox/MetaHBox/LoaderTag" unique_id=1457358726]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38, 0.78, 0.42, 1)
 theme_override_fonts/font = ExtResource("1_font")
 theme_override_font_sizes/font_size = 12
 text = "Fabric"
 
-[node name="ActionHBox" type="HBoxContainer" parent="ItemHBox"]
+[node name="ActionHBox" type="HBoxContainer" parent="ItemHBox" unique_id=512786677]
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/separation = 12
 
-[node name="InstallButton" type="Button" parent="ItemHBox/ActionHBox"]
+[node name="InstallButton" type="Button" parent="ItemHBox/ActionHBox" unique_id=2094439442]
 custom_minimum_size = Vector2(100, 36)
 layout_mode = 2
 size_flags_vertical = 4
@@ -171,7 +171,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_bold")
 theme_override_font_sizes/font_size = 14
 theme_override_styles/normal = SubResource("sb_btn_install_n")
-theme_override_styles/hover = SubResource("sb_btn_install_h")
 theme_override_styles/pressed = SubResource("sb_btn_install_p")
+theme_override_styles/hover = SubResource("sb_btn_install_h")
 theme_override_styles/focus = SubResource("sb_btn_install_n")
 text = "Install"

@@ -1,13 +1,15 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786745708
+::res://::1786747737
 icon.svg::CompressedTexture2D::4495857109492016873::1786278212::1786278307::1::::<><><>0<>0<>f43d864ec0e32b58d1021541ed79376f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::4805017973151333905::1786729951::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf<>uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf
+mods_page.tscn::PackedScene::7889944296089975635::1786747451::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf<>uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf<>uid://c6xk3m8y7j2p1::::res://mod_item.tscn
+mod_item.tscn::PackedScene::6996834063057928460::1786747765::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf<>uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf
 README.md::TextFile::-1::1786291910::0::1::::<><><>0<>0<><>::
-UI1.tscn::PackedScene::7549894931442659179::1786730133::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf<>uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf
-UI2.tscn::PackedScene::7272285268283668598::1786301205::0::1::::<><><>0<>0<><>::
-UI3.tscn::PackedScene::411507495555740624::1786728102::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
-UI4.tscn::PackedScene::2559280459237089600::1786728735::0::1::::<><><>0<>0<><>::uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf<>uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
+UI1.tscn::PackedScene::7549894931442659179::1786747754::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf<>uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf
 ::res://fonts/::1786292786
 ::res://fonts/Minecraft Font/::1786293104
 Minecraft-Bold.otf::FontFile::1584391711625340704::1786292797::1786292797::1::::<><><>0<>0<>b10513aa72615490d7f62669d4b45ef8<>res://.godot/imported/Minecraft-Bold.otf-8adc619b9b6aca11424e4bcf81fad45b.fontdata::
 Minecraft.otf::FontFile::6317389090420106136::1786292797::1786292797::1::::<><><>0<>0<>44e1c978ede58c6c6c192494972d0de8<>res://.godot/imported/Minecraft.otf-82afdcfcd0bbd7daf9d8b47e606e9dc1.fontdata::
+::res://legacyUI's/::0
+UI4.tscn::PackedScene::2559280459237089600::1786728735::0::1::::<><><>0<>0<><>::uid://wtqx2hd2ya5u::::res://fonts/Minecraft Font/Minecraft-Bold.otf<>uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
+UI3.tscn::PackedScene::411507495555740624::1786728102::0::1::::<><><>0<>0<><>::uid://cwagqfqwdxawe::::res://fonts/Minecraft Font/Minecraft.otf
+UI2.tscn::PackedScene::7272285268283668598::1786301205::0::1::::<><><>0<>0<><>::

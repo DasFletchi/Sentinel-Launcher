@@ -258,6 +258,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="LoadMoreButton" type="Button" parent="PageMargin/PageVBox" unique_id=800246669]
+visible = false
 custom_minimum_size = Vector2(200, 40)
 layout_mode = 2
 size_flags_horizontal = 4
