@@ -14,17 +14,30 @@ extends Panel
 
 @onready var btn_settings: Button = $RootLayout/Sidebar/SideContent/SettingsSection/BtnSettings
 
-
+var mc_font_bold = preload("res://fonts/Minecraft Font/Minecraft-Bold.otf")
+var mc_font_regular = preload("res://fonts/Minecraft Font/Minecraft.otf")
 
 
 func _on_btn_instances_pressed() -> void:
 	main_panel.show()
 	mods_page.hide()
+	btn_instances.add_theme_stylebox_override("normal", active_style)
+	btn_mods.add_theme_stylebox_override("normal", inactive_style)
+	btn_instances.add_theme_stylebox_override("hover", active_style)
+	btn_instances.add_theme_font_override("font", mc_font_bold) #als ob es nicht klar ist das ich die font ändern will
+	btn_mods.add_theme_font_override("font", mc_font_regular)
+
+
 
 
 func _on_btn_mods_pressed() -> void:
 	main_panel.hide()
 	mods_page.show()
+	btn_mods.add_theme_stylebox_override("hover", active_style)
+	btn_mods.add_theme_stylebox_override("normal", active_style)
+	btn_instances.add_theme_stylebox_override("normal", inactive_style)
+	btn_mods.add_theme_font_override("font", mc_font_bold)
+	btn_instances.add_theme_font_override("font", mc_font_regular)
 
 
 func _on_btn_resourcepacks_pressed() -> void:
